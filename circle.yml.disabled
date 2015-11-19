@@ -11,4 +11,4 @@ deployment:
     branch:
       - master
     commands:
-      - make update_lambda
+      - make tf
