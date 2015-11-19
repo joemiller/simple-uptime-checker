@@ -1,0 +1,14 @@
+machine:
+  python:
+    version: 2.7
+
+test:
+  override:
+    - make test
+
+deployment:
+  prod:
+    branch:
+      - master
+    commands:
+      - make update_lambda
